@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -36,8 +39,8 @@ a {
   }
   
   .slick-current > div > div {
-    background-color: rgb(246 250 255);
-    box-shadow: 0 2px 6px 4px rgb(239 239 239);
+    background-color: rgba(141, 204, 219, 0.12);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
   }
 }
 
@@ -48,7 +51,7 @@ a {
   }
   
   .slick-current + div > div > div {
-    background-color: rgb(246 250 255);
-    box-shadow: 0 2px 6px 4px rgb(239 239 239);
+    background-color: rgba(141, 204, 219, 0.12);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
   }
 }

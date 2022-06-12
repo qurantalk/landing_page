@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#8DCCDB'
+      },
       backgroundImage: {
         'vector-wave': "url('/vector Wave.svg')",
       },
