@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import ReactStars from 'react-rating-stars-component'
 import Slider from 'react-slick'
+import { reviewSectionData } from "../config/config";
 import useWindowDimensions from '../hooks/useWindowDimensions'
 
 export default function ReviewSection({ classes }) {
@@ -14,11 +15,11 @@ export default function ReviewSection({ classes }) {
 
       <div className='grid grid-cols-1 md:grid-cols-12 px-8 mb-12'>
         <div className='col-span-7 text-center md:text-left'>
-          <h3 className='text-base md:text-2xl mb-2 font-bold text-primary'>
-            5 star reviews on Playstore &amp; iOS!
+          <h3 className='text-base md:text-4xl mb-2 font-bold text-primary'>
+            {reviewSectionData.heading}
           </h3>
-          <p className='text-sm md:text-base max-w-760 mr-auto'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          <p className='text-sm md:text-2xl max-w-760 mr-auto'>
+            {reviewSectionData.text}
           </p>
         </div>
       </div>

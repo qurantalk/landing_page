@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { sectionThreeData } from './../config/config';
 
 export default function SectionThree({ classes }) {
   return (
@@ -7,11 +8,11 @@ export default function SectionThree({ classes }) {
         <Image src="/Illustrations.svg" alt="illustration" width={708} height={628} />
       </div>
       <div className='col-span-7 text-center md:text-right order-2 md:order-3'>
-        <h3 className='text-base md:text-2xl mb-2 font-bold text-primary'>
-          Never stay out of touch with your salah
+        <h3 className='text-base md:text-4xl mb-2 font-bold text-primary'>
+          {sectionThreeData.heading}
         </h3>
-        <p className='text-sm md:text-base max-w-760 ml-auto'>
-          As the world progresses in today's age and time, we find ourselves with us no time to ground ourselves and our emotions. QuranTalk enables you to connect with the Holy Quran using your emotions
+        <p className='text-sm md:text-2xl max-w-760 ml-auto'>
+          {sectionThreeData.text}
         </p>
       </div>
     </section>

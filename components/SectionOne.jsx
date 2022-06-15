@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { sectionOneData } from '../config/config'
 
 export default function SectionOne({ classes }) {
   return (
@@ -7,11 +8,11 @@ export default function SectionOne({ classes }) {
         <Image src="/Illustrations-2.svg" alt="illustration" width={708} height={628} />
       </div>
       <div className='md:col-span-7 text-center md:text-right'>
-        <h3 className='text-base md:text-2xl mb-2 font-bold text-primary'>
-          Connect with the Quran on another level
+        <h3 className='text-base md:text-4xl mb-2 font-bold text-primary'>
+          {sectionOneData.heading}
         </h3>
-        <p className='ml-auto text-sm md:text-base max-w-760'>
-          As the world progresses in today's age and time, we find ourselves with us no time to ground ourselves and our emotions. QuranTalk enables you to connect with the Holy Quran using your emotions
+        <p className='ml-auto text-sm md:text-2xl max-w-760'>
+          {sectionOneData.text}
         </p>
       </div>
     </section>

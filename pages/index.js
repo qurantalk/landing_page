@@ -12,7 +12,7 @@ import SectionTwo from '../components/SectionTwo';
 export default function Home() {
 
   return (
-    <div >
+    <div className='text-[#625A5A]'>
       <Head>
         <title>Quran Talk</title>
         <meta key='desc' name="description" content="Quran Talk" />

@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         primary: '#8DCCDB'
       },
+      minHeight: {
+        hero: 'calc(100vh-112px)',
+      },
       backgroundImage: {
         'vector-wave': "url('/vector Wave.svg')",
       },

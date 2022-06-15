@@ -9,7 +9,7 @@ export default function Header() {
         <header className='container px-4 mx-auto my-4'>
             <div className='flex w-full mt-16 md:mt-0 justify-center md:justify-between items-center'>
                 {
-                    windowWidth <= 625 ?
+                    windowWidth <= 767 ?
                         <Image src="/fullLogo.svg" alt="facebook" width={128} height={35} /> :
                         <Image src="/iconLogo.svg" alt="facebook" width={80} height={80} />
                 }

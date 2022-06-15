@@ -1,14 +1,15 @@
 import Image from 'next/image'
+import { downloadSectionData } from '../config/config'
 
 export default function DownloadSection({ classes }) {
   return (
     <section id='section-download' className={`grid grid-cols-1 md:grid-cols-12 items-center px-8 ${classes}`}>
       <div className='col-span-7 order-2 text-center md:text-left'>
-        <h3 className='hidden md:block text-2xl mb-2 font-bold text-primary'>
-          Download QuranTalk on Android &amp; iOS
+        <h3 className='hidden md:block text-4xl mb-2 font-bold text-primary'>
+          {downloadSectionData.heading}
         </h3>
-        <p className='text-sm md:text-base max-w-760 mr-auto'>
-          With a community of over 1500 users, QuranTalk helps you navigate your emotional states via the verses of the Holy Quran and enables you to ground your emotions better.
+        <p className='text-sm md:text-2xl max-w-760 mr-auto'>
+          {downloadSectionData.text}
         </p>
         <div className='flex justify-center md:justify-start gap-4 mt-4'>
           <a href="#">
