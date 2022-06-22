@@ -32,5 +32,14 @@ To get a local copy up and running follow these simple steps.
     ```
 4. Run project.
     ```sh
-     npm start
+     npm run dev
     ```
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    
+
+## Learn More
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js deployment documentation](https://nextjs.org/docs/deployment) - learn about deploying to a static server.

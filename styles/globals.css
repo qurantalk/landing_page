@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slick-slide {
+  height: 80% !important;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+
+.slick-arrow::before {
+  color: black !important;
+}
+#section-hero {
+  height: auto;
+}
+@media screen and (min-width: 767px) {
+  #section-hero {
+    height: calc(100vh - 112px);
+    display: grid;
+    place-items:center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slick-current {
+    transform: scale(0.9);
+    font-weight: 600;
+  }
+  
+  .slick-current > div > div {
+    background-color: rgba(141, 204, 219, 0.12);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .slick-current + div {
+    transform: scale(0.9);
+    font-weight: 600;
+  }
+  
+  .slick-current + div > div > div {
+    background-color: rgba(141, 204, 219, 0.12);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F6B435;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F6B445;
+}
